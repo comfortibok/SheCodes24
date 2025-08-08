@@ -1,0 +1,186 @@
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: #f9f7fe;
+  font-family: Helvetica, Arial, sans-serif;
+  line-height: 1.6;
+}
+
+main {
+  max-width: 600px;
+  margin: 120px auto 0;
+  padding-inline: 20px;
+}
+
+.container {
+  margin-block-end: 120px;
+}
+
+header {
+  margin: 30px;
+}
+
+h1 {
+  font-size: 36px;
+  font-weight: 800;
+  text-align: center;
+  margin: 0;
+}
+
+form {
+  padding-block: 15px;
+  display: flex;
+  justify-content: center;
+  flex-direction: row;
+  gap: 6px;
+}
+
+.search-input {
+  width: 78%;
+  padding: 15px;
+  border: 1px solid rgba(39, 33, 66, 0.5);
+  border-radius: 30px;
+  color: #272044;
+}
+
+.search-input:focus {
+  outline: 1px solid rgb(136, 93, 241, 0.3);
+}
+
+.button {
+  font-size: 16px;
+  color: #ffffff;
+  background-color: #885df1;
+  width: 112px;
+  border: none;
+  border-radius: 30px;
+  padding: 15px;
+}
+
+.hint {
+  margin-top: 5px;
+  line-height: 1.5;
+  font-size: 13px;
+  opacity: 0.6;
+}
+
+.poem {
+  background-color: #ffffff;
+  font-size: 16px;
+  box-shadow: 0 4px 30px 0 rgba(39, 33, 66, 0.03);
+  border-left: 3px solid #885df1;
+  padding: 20px;
+}
+
+.hidden {
+  display: none;
+}
+
+footer {
+  margin-top: 30px;
+  text-align: center;
+  font-size: 15px;
+}
+
+a,
+a:visited,
+.poem strong {
+  color: #885df1;
+}
+
+a:hover,
+a:focus {
+  cursor: pointer;
+  color: #422883;
+}
+
+a:active {
+  color: yellow;
+}
+
+.generating {
+  animation: blink-animation 1s steps(5, start) infinite;
+}
+
+@keyframes blink-animation {
+  to {
+    visibility: hidden;
+  }
+}
+
+
+
+@media (max-width: 468px) {
+  main {
+    margin-block-start: 100px;
+  }
+
+  .container {
+    margin-block-end: 100px;
+    position: relative;
+  }
+
+  h1 {
+    font-size: 32px;
+  }
+
+  header {
+    margin: 20px;
+  }
+
+  form {
+    gap: 4.5em;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .search-input {
+    width: 100%;
+  }
+
+  button {
+    font-size: 14px;
+  }
+
+  .hint {
+    position: absolute;
+    top: 65px;
+  }
+}
+
+@media (max-width: 320px) {
+  main {
+    margin-block-start: 80px;
+  }
+
+  .container {
+    margin: 80px auto;
+  }
+
+  h1 {
+    font-size: 24px;
+  }
+
+  header {
+    margin: 10px;
+  }
+
+  .poem {
+    font-size: 14px;
+  }
+
+  button {
+    width: 75px;
+    padding: 8px;
+  }
+
+  footer {
+    font-size: 13px;
+  }
+}
