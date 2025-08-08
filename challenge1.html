@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>SheCodes Challenge2</title>
+    <style>
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
+
+        body {
+            padding: 10px;
+            font-family: 'Courier New', Courier, monospace;
+        }
+
+        h1 {
+            font-size: 35px;
+            font-weight: 800;
+            text-align: center;
+            margin-top: 20px;
+        }
+
+        p {
+            font-size: 18px;
+        }
+
+        ul {
+            list-style: none;
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            gap: 20px;
+        }
+
+        section {
+            margin-block-start: 50px;
+        }
+
+        img {
+            margin-block-end: 20px;
+            width: 200px;
+            height: 200px;
+            transition: all 150ms ease-in-out;
+        }
+
+        img:hover {
+            transform: scale(1.5) rotate(720deg);
+        }
+
+        @media(max-width:468px) {
+            h1 {
+                font-size: 24px;
+            }
+
+            p {
+                font-size: 14px;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <h1 id="main-heading">Cities I Would Love to Visit</h1>
+    <section aria-labelledby="main-heading">
+        <ul>
+            <li>
+                <img src="https://s3.amazonaws.com/shecodesio-production/uploads/files/000/146/373/original/Untitled-designfs-1.png?1728120637"
+                    alt="The golden gate bridge in California, USA" />
+                <p>USA</p>
+            </li>
+            <li>
+                <img src="https://s3.amazonaws.com/shecodesio-production/uploads/files/000/146/372/original/iStock-505494768-1024x683.jpg?1728120609"
+                    alt="The Eiffel Tower in Paris, France" />
+                <p>Paris</p>
+            </li>
+            <li>
+                <img src="https://s3.amazonaws.com/shecodesio-production/uploads/files/000/146/370/original/gondola-ride-in-autumn-in-kashmir-2023-10-18t174214.790-min.png?1728120543"
+                    alt="A lady dressed in a gown with white and black hat walking on the bridge in Kashmir" />
+                <p>Kashmir</p>
+            </li>
+            <li>
+                <img src="https://s3.amazonaws.com/shecodesio-production/uploads/files/000/146/371/original/jyoshankar_sixsenseszilpasyon_seychelles_luxuryhotels_19.jpg?1728120572"
+                    alt="A couple cuddling on the beach in Seychelles" />
+                <p>Seychelles</p>
+            </li>
+        </ul>
+    </section>
+</body>
+
+</html>
