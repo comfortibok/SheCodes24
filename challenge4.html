@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>weather forecast</title>
+</head>
+<style>
+    * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+    }
+
+    body {
+        width: 100%;
+        flex-direction: column;
+    }
+
+    h1 {
+        color: #1b64d1;
+        font-size: 28px;
+        font-weight: bold;
+        text-align: center;
+        margin: 0 auto;
+        margin: 15px 0;
+    }
+
+    .currentTemperature {
+        font-size: 28px;
+        text-align: center;
+        margin: 0 auto;
+    }
+
+    h2 {
+        font-size: 18px;
+        text-align: center;
+        margin: 0 auto;
+        margin-top: 5px;
+    }
+
+    p {
+        font-size: 19px;
+    }
+
+    ul {
+        list-style-type: none;
+        padding: 0 5px;
+    }
+
+    li {
+        max-width: 400px;
+        text-align: center;
+        margin: 5px auto;
+    }
+
+    .temperature {
+        padding: 8px 0;
+    }
+
+    .weather {
+        margin: 10px;
+        padding: 10px;
+        border-radius: 10px;
+        transition: all 200ms ease-in-out;
+        max-width: 400px;
+        margin: 0 auto;
+    }
+
+    .weather:hover {
+        background-color: #fbf2d5;
+    }
+
+    button {
+        font-size: 16px;
+        background-color: #1b64d1;
+        color: #ffffff;
+        border: 1px solid;
+        border-radius: 25px;
+        padding: 15px 20px;
+        text-align: center;
+        box-shadow: 0px 8px 0 rgba(0, 0, 0, 0.1);
+        transition: all 200ms ease-in-out;
+    }
+
+    button:hover {
+        background-color: #ffffff;
+        color: #1b64d1;
+        cursor: pointer;
+    }
+
+    button:focus {
+        outline: 2px solid #1b64d1;
+        outline-offset: 2px;
+    }
+
+    .dev {
+        font-family: monospace;
+        font-size: 16px;
+        text-align: center;
+        margin: 25px auto;
+    }
+</style>
+
+<body>
+    <main>
+        <h1 id="current-weather">&#9925;<br> Currently 21° in Tokyo</h1>
+        <p class="currentTemperature" aria-label="Today's temperature range">13° /<strong> 23°</strong></p>
+        <ul aria-labelledby="current-weather">
+            <li class="weather">
+                <div>
+                    <h2><span>&#127783;</span> <span>Tomorrow</span></h2>
+                    <p class="temperature" aria-label="Tomorrow's temperature range">10° /<strong> 22°</strong></p>
+                </div>
+            </li>
+            <li class="weather">
+                <div>
+                    <h2><span>&#9925;</span> <span>Saturday</span></h2>
+                    <p class="temperature" aria-label="Saturday's temperature range">15° /<strong> 17°</strong></p>
+                </div>
+            </li>
+            <li class="weather">
+                <div>
+                    <h2><span>&#9728;</span> <span>Sunday</span></h2>
+                    <p class="temperature" aria-label="Sunday's temperature range">15° /<strong> 28°</strong></p>
+                </div>
+            </li>
+            <li><button aria-label="Change city">Change city</button></li>
+        </ul>
+    </main>
+    <footer>
+        <p class="dev">Coded by Comfort Ibok</p>
+    </footer>
+</body>
+
+</html>
