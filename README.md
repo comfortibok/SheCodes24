@@ -17,7 +17,11 @@ This project is a visually engaging and accessible web page about dancing as a h
 
 # Challenge 4: Simple Weather Forecast
 
-This project is a responsive weather forecast web page. It displays the current temperature and a 3-day forecast for Tokyo, with a button to change the city (static for demo purposes). Built with HTML and CSS
+This project is a responsive weather forecast web page. It displays the current temperature and a 3-day forecast for Tokyo, with a button to change the city (static for demo purposes). Built with HTML and CSS.
+
+# Challenge 5: Photography Hobby Page
+
+This project features a sun photo, a gallery, a dark theme toggle, and a responsive layout.
 
 ## Features
 

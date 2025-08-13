@@ -13,15 +13,3 @@ This project is a web application that generates French poems using AI. Enter a 
 ## Demo
 
 Hosted on Netlify (https://icm-ai-poem-generator.netlify.app/)
-
-## Getting Started
-
-1. **Clone the repository:**
-   ```bash
-   git clone https://github.com/comfortibok/SheCodes24.git
-   ```
-2. **Navigate to the project folder:**
-   ```bash
-   cd SheCodes24/AI-French-Poem-Generator
-   ```
-3. **Open `index.html` in your browser.**

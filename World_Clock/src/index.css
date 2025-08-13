@@ -1,0 +1,186 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  border: 4px solid red;
+  background-color: rgb(219, 202, 217);
+  line-height: 1.6;
+  font-family: Tahoma;
+}
+
+h1,
+footer {
+  text-align: center;
+}
+
+.clockContainer {
+  background-color: rgb(247, 245, 245);
+  max-width: 600px;
+  margin: 60px auto 0;
+  padding: 30px;
+  border-radius: 5px;
+  box-shadow: 0px 4px 12px rgba(0, 0, 0, 0.1);
+}
+
+h1 {
+  font-size: 36px;
+  font-weight: 600;
+  margin-bottom: 20px;
+}
+
+select {
+  width: 100%;
+  padding: 10px;
+  font-size: 18px;
+  border-radius: 5px;
+}
+
+select:focus {
+  outline: none;
+}
+
+.city {
+  border: 4px solid red;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px 0;
+  border-bottom: 1px dashed rgb(18, 17, 17);
+  margin: 10px 0;
+}
+
+.city h3 {
+  font-size: 35px;
+  font-weight: 600;
+  margin-bottom: 5px;
+}
+
+.city span {
+  font-size: 18px;
+}
+
+.city h2 {
+  font-size: 40px;
+  font-weight: 600;
+  display: flex;
+  align-items: center;
+}
+
+.city small {
+  font-size: 28px;
+  vertical-align: middle;
+  margin-left: 8px;
+}
+.city:last-child {
+  border: none;
+}
+
+footer {
+  font-size: 18px;
+  color: rgb(40, 37, 37);
+  margin-top: 35px;
+}
+
+a,
+a:visited {
+  font-size: 18px;
+  text-decoration: none;
+  transition: all 150ms ease-in-out;
+}
+
+a:hover,
+a:focus {
+  color: red;
+}
+
+a:active {
+  color: darkcyan;
+}
+
+@media (max-width: 550px) {
+  body {
+    padding-inline: 8px;
+  }
+
+  .clockContainer {
+    padding: 10px;
+    margin-top: 30px;
+  }
+
+  h1 {
+    font-size: 24px;
+    margin-bottom: 12px;
+  }
+
+  .city,
+  .city div {
+    flex-direction: column;
+    justify-content: center;
+  }
+
+  .city {
+    padding: 10px 0;
+    margin: 6px 0;
+  }
+
+  .city div {
+    display: flex;
+    align-items: center;
+  }
+
+  .city h3 {
+    font-size: 22px;
+    margin-bottom: 2px;
+  }
+
+  .city span,
+  select,
+  footer,
+  a {
+    font-size: 16px;
+  }
+  .city h2 {
+    font-size: 20px;
+  }
+  .city small {
+    font-size: 15px;
+  }
+}
+
+@media (max-width: 320px) {
+  body {
+    padding-inline: 2px;
+  }
+
+  .clockContainer {
+    margin-top: 10px;
+    padding: 4px;
+  }
+
+  h1 {
+    font-size: 20px;
+    margin-bottom: 6px;
+  }
+
+  .city h3 {
+    font-size: 20px;
+  }
+
+  .city span,
+  select,
+  footer,
+  a {
+    font-size: 12px;
+  }
+
+  .city h2 {
+    font-size: 16px;
+  }
+
+  .city small {
+    font-size: 12px;
+  }
+}

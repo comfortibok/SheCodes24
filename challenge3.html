@@ -123,7 +123,7 @@
 
         a,
         a:visited {
-            color: rgb(49, 25, 49);
+            color: rgb(115, 73, 115);
             text-decoration: none;
         }
 
@@ -172,8 +172,6 @@
                 grid-template-columns: 1fr;
                 grid-gap: 6px;
             }
-
-
         }
     </style>
 </head>
@@ -220,8 +218,7 @@
     <script>
         function addDarkTheme() {
             let body = document.body;
-            let button = document.querySelector(".darkThemeButton");
-            if (body.classList.contains("dark")) {
+             if (body.classList.contains("dark")) {
                 body.classList.remove("dark");
             } else {
                 body.classList.add("dark");

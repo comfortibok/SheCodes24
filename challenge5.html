@@ -1,0 +1,245 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Hobby - Photography</title>
+    <style>
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding-left: 0;
+        }
+
+        body {
+            background: radial-gradient(circle at 0.2% 1.8%,
+                    rgb(255, 90, 8) 0%,
+                    rgb(88, 0, 0) 100.2%);
+            padding: 20px 15px;
+        }
+
+        body.dark {
+            background: rgb(193, 108, 66)
+        }
+
+        body.dark footer,
+        body.dark footer a {
+            color: white;
+        }
+
+        .theme-button {
+            display: block;
+            margin: 20px auto;
+            background-color: black;
+            color: white;
+            font-size: 12px;
+            font-weight: bold;
+            padding: 8px 10px;
+            border: none;
+            transition: all 150ms ease-in-out;
+        }
+
+        .theme-button:hover {
+            color: black;
+            background: white;
+            cursor: pointer;
+        }
+
+        .theme-button:focus,
+        .learn:focus,
+        a:focus {
+            outline: 2px solid #ff9800;
+            outline-offset: 2px;
+        }
+
+        h1 {
+            font-size: 35px;
+            font-weight: 700;
+            text-align: center;
+            margin-bottom: 20px;
+        }
+
+        h2 {
+            font-size: 28px;
+            text-align: center;
+            margin-bottom: 18px;
+        }
+
+        .container {
+            background-color: rgba(255, 255, 255, 0.6);
+            max-width: 800px;
+            margin: 20px auto;
+            padding: 20px;
+            border-radius: 10px;
+        }
+
+        img {
+            max-width: 100%;
+        }
+
+        .sunPhoto {
+            border-radius: 10px;
+            transition: all 150ms ease-in-out;
+        }
+
+        .sunPhoto:hover {
+            filter: contrast(80%);
+            transform: scale(1.1);
+        }
+
+        p {
+            font-size: 17px;
+            line-height: 1.5;
+        }
+
+        footer {
+            text-align: center;
+            margin: 15px 0;
+            font-size: 18px;
+        }
+
+        footer a {
+            text-decoration: none;
+            margin-left: 3px;
+            color: black;
+        }
+
+        .learn {
+            display: block;
+            margin: 15px auto;
+            background-color: rgba(255, 255, 255, 0.6);
+            border: 1px solid rgb(255, 152, 0);
+            font-size: 14px;
+            font-weight: bold;
+            padding: 8px 15px;
+            border-radius: 15px;
+            transition: all 150ms ease-in-out;
+        }
+
+        .learn:hover {
+            background-color: rgb(255, 152, 0);
+            cursor: pointer;
+        }
+
+        .grid {
+            margin: 15px 0;
+            display: grid;
+            grid-template-columns: repeat(4, 1fr);
+            grid-gap: 10px;
+            width: 100%;
+        }
+
+        .grid img {
+            width: 100%;
+            height: 100%;
+            border-radius: 8px;
+            transition: all 150ms ease-in-out;
+        }
+
+        .grid img:hover {
+            transform: scale(1.2) translateY(10px);
+        }
+
+        a,
+        a:visited {
+            color: rgb(88, 0, 0);
+            text-decoration: none;
+        }
+
+        a:hover,
+        a:focus {
+            cursor: pointer;
+            text-decoration: underline;
+        }
+
+        a:active {
+            color: rgb(255, 152, 0);
+
+        }
+
+        @media (max-width: 468px) {
+            h1 {
+                font-size: 24px;
+            }
+
+            h2 {
+                font-size: 20px;
+            }
+
+            p,
+            a,
+            footer {
+                font-size: 14px;
+            }
+
+            .grid {
+                grid-template-columns: repeat(2, 1fr);
+            }
+
+            button {
+                font-size: 14px;
+                margin-top: 20px;
+            }
+
+            .container {
+                padding: 10px;
+            }
+        }
+
+        @media (max-width: 320px) {
+            .grid {
+                grid-template-columns: 1fr;
+                grid-gap: 6px;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <button class="theme-button" aria-label="Toggle dark theme">Dark Theme</button>
+    <main class="container">
+        <h1>PHOTOGRAPHY</h1>
+        <h2>My favorite hobby</h2>
+        <a href="https://www.shecodes.io/challenge_submissions/1260364/embed" target="_blank"
+            aria-label="View full size sun photo submission on SheCodes"><img
+                src="https://s3.amazonaws.com/shecodesio-production/uploads/files/000/146/660/original/sun-photo.jpg?1728287051"
+                alt="A bright sun photo, SheCodes challenge submission" class="sunPhoto" /></a>
+        <div class="grid" aria-label="Gallery of photographers">
+            <img src="https://s3.amazonaws.com/shecodesio-production/uploads/files/000/146/659/original/Photographer_Photographing_Nevada_Mountains.jpg?1728286922"
+                alt="Photographer taking a picture of Nevada Mountains" />
+            <img src="https://s3.amazonaws.com/shecodesio-production/uploads/files/000/146/657/original/benefits-of-photography.jpg?1728286621"
+                alt="Photographer holding a camera outdoors" />
+            <img src="https://s3.amazonaws.com/shecodesio-production/uploads/files/000/146/658/original/thumbnail.jpeg?1728286668"
+                alt="A photographer checking the pictures taken on her camera" />
+            <img src="https://s3.amazonaws.com/shecodesio-production/uploads/files/000/146/656/original/photography-projects-1001.jpg?1728286590"
+                alt="A blonde haired photographer taking a picture with a camera" />
+        </div>
+        <p>
+            Photography is the art, application, and practice of creating images by
+            recording light, either electronically by means of an image sensor, or
+            chemically by means of a light-sensitive material such as photographic
+            film. It is employed in many fields of science, manufacturing (e.g.,
+            photolithography), and business, as well as its more direct uses for
+            art, film and video production, recreational purposes, hobby, and mass
+            communication. A person who makes photographs is called a photographer.
+        </p>
+        <span><a href="https://en.m.wikipedia.org/wiki/Photography" target="_blank"
+                aria-label="Read more about photography on Wikipedia">📖 Read on Wikipedia</a></span>
+        <button class="learn" aria-label="Learn how to photography">Learn Photography</button>
+    </main>
+    <footer>Coded with 💜 by <a href="https://github.com/comfortibok" target="_blank"
+            aria-label="Comfort Ibok GitHub repository">Comfort Ibok</a></footer>
+    <script>
+
+        function changeTheme() {
+            let body = document.body;
+            let button = document.querySelector(".theme-button");
+            body.classList.toggle("dark");
+        }
+        let themeButton = document.querySelector(".theme-button");
+        themeButton.addEventListener("click", changeTheme);
+    </script>
+</body>
+
+</html>

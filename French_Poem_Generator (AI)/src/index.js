@@ -19,6 +19,7 @@ function handleSubmit(event) {
   poem.classList.remove("hidden");
   poem.innerHTML = `<div class="generating">⏳ Generating a French Poem about ${searchInput.value}.</div>`;
   axios.get(apiURL).then(displayPoem);
+  searchInput.value = ""
 }
 
 let poemElement = document.querySelector("form");

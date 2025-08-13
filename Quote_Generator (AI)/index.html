@@ -4,7 +4,7 @@
 <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>AI French Poem Generator</title>
+    <title>AI-Quote-Generator</title>
     <!-- CSS -->
     <link rel="stylesheet" href="src/index.css" />
     <!-- TypewriterJS -->
@@ -15,21 +15,20 @@
 
 <body>
     <header>
-        <h1>AI French Poem Generator</h1>
+        <h1>QUOTE GENERATOR</h1>
     </header>
     <main>
-
-        <div class="container">
-            <form>
-                <input type="text" placeholder="Enter the topic of the french poem" autocomplete="off" autofocus
-                    required class="search-input" id="search-input" aria-label="search input" />
-                <input type="submit" class="button" aria-label="Submit" />
+        <section class="quote-container">
+            <form id="form">
+                <input class="search-input" type="text" placeholder="Enter keywords..." autocomplete="off"
+                    aria-label="search input" required />
+                <input type="Submit" class="submit-button" aria-label="Submit" />
             </form>
-            <p class="hint">i.e: Flower, Paris or Cheese</p>
-        </div>
-        <p class="poem hidden" id="poem"></p>
-    </main>
 
+            <div class="hint">Hint: Motherhood, Motivation, Love</div>
+        </section>
+        <p class="quote hidden"></p>
+    </main>
     <footer>
         This project was coded by
         <a href="https://github.com/comfortibok" target="_blank" aria-label="Comfort Ibok on GitHub">Comfort Ibok</a>
@@ -39,6 +38,8 @@
             href="https://icm-ai-poem-generator.netlify.app/" target="_blank"
             aria-label="View the deployed project on Netlify">Netlify</a>.
     </footer>
+
+
 
     <!-- JS -->
     <script src="src/index.js"></script>
