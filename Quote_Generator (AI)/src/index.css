@@ -80,16 +80,17 @@ form {
 
 .submit-button {
   width: 120px;
-  border: 1px solid var(--primary-color);
   font-weight: 600;
-  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
   color: var(--secondary-color);
+  border: none;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
   transition: all 150ms ease-in-out;
 }
 
 .submit-button:hover {
   color: var(--primary-color);
   background-color: var(--secondary-color);
+  border: 1px solid var(--primary-color);
 }
 
 .hint {
@@ -99,10 +100,11 @@ form {
 }
 
 .quote {
+  max-width: 600px;
+  margin: 30px auto;
   background-color: whitesmoke;
   border-inline: 3px solid var(--primary-color);
   padding: 20px;
-  margin: 30px;
 }
 
 .hidden {

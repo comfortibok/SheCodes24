@@ -13,4 +13,4 @@ A responsive web app that generates random quotes using AI. Enter a topic or cli
 
 ## Demo
 
-Hosted on Netlify (https://icm-quote-generator.netlify.app/)
+Hosted on Netlify (https://icm-ai-quote-generator.netlify.app/)
