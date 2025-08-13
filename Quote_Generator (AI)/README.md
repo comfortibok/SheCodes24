@@ -10,3 +10,7 @@ A responsive web app that generates random quotes using AI. Enter a topic or cli
 - Built with HTML, CSS, and JavaScript
 - ARIA labels and roles for screen readers
 - Good color contrast and readable font sizes
+
+## Demo
+
+Hosted on Netlify (https://icm-quote-generator.netlify.app/)
