@@ -13,4 +13,4 @@ This project displays the current time in multiple cities around the world. User
 
 ## Demo
 
-Hosted on Netlify (https://icm-ai-poem-generator.netlify.app/)
+Hosted on Netlify (https://icm-world-clock.netlify.app/)
